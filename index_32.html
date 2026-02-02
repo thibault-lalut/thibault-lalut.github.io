@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta name="google-site-verification" content="Q8_zhP39Zu_cNlxwNwcHKxliAW9aIONy_vynKyY8UWY" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Essential -->
+  <title>Thibault Lalut — Sociologue | EHESS</title>
+  <meta name="description" content="Diplômé de l'EHESS (Master de sociologie, mention Très Bien). Recherche sur la gouvernance numérique, les instruments algorithmiques et les transformations de l'État. Compétences : Python, R, analyse textuelle.">
+  <meta name="keywords" content="Thibault Lalut, sociologue, EHESS, Sciences Po, gouvernance numérique, algorithmes, ENA INSP, Python, R, prosopographie">
+  <meta name="author" content="Thibault Lalut">
+  <link rel="canonical" href="https://thibault-lalut.github.io/">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://thibault-lalut.github.io/">
+  <meta property="og:title" content="Thibault Lalut — Sociologue">
+  <meta property="og:description" content="Diplômé EHESS. Recherche sur gouvernance numérique et transformations de l'État.">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Thibault Lalut">
+  <meta name="twitter:description" content="Sociologue | EHESS | Gouvernance numérique">
+  
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Thibault Lalut",
+    "jobTitle": "Sociologue",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "École des Hautes Études en Sciences Sociales",
+      "alternateName": "EHESS"
+    },
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "EHESS"
+    },
+    "url": "https://thibault-lalut.github.io/",
+    "sameAs": [
+      "https://github.com/thibault-lalut",
+      "https://www.linkedin.com/in/thibault-lalut/",
+      "https://orcid.org/0009-0004-6720-2974"
+    ]
+  }
+  </script>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Crimson+Pro:wght@600;700&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+    
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    
+    header {
+      background: #2d2d2d;
+      color: white;
+      padding: 55px 50px 50px;
+      position: relative;
+      text-align: center;
+    }
+    
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: #1e3a8a;
+    }
+    
+    h1 {
+      font-family: 'Crimson Pro', serif;
+      font-size: 2.4em;
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    
+    .tagline {
+      font-size: 1em;
+      opacity: 0.9;
+      font-weight: 400;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+    
+    .header-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+    
+    .header-links a {
+      color: white;
+      background: rgba(255,255,255,0.1);
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: 600;
+      padding: 12px 24px;
+      border: 2px solid rgba(255,255,255,0.3);
+      transition: all 0.3s ease;
+    }
+    
+    .header-links a:hover {
+      background: #1e3a8a;
+      border-color: #1e3a8a;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(30, 58, 138, 0.4);
+    }
+    
+    .section {
+      padding: 35px 50px;
+    }
+    
+    .section:nth-child(even) {
+      background: #fafafa;
+    }
+    
+    .section-title {
+      font-family: 'Crimson Pro', serif;
+      font-size: 1.6em;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #e0e0e0;
+      position: relative;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 60px;
+      height: 2px;
+      background: #1e3a8a;
+    }
+    
+    .intro-block {
+      background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+      border-left: 4px solid #1e3a8a;
+      padding: 24px 28px;
+      margin-bottom: 24px;
+      font-size: 0.98em;
+      line-height: 1.8;
+      color: #333;
+    }
+    
+    .intro-block strong {
+      color: #1a1a1a;
+      font-weight: 600;
+    }
+    
+    .intro-text {
+      margin-bottom: 20px;
+      color: #333;
+      text-align: justify;
+    }
+    
+    .highlight-list {
+      list-style: none;
+      margin: 20px 0;
+    }
+    
+    .highlight-list li {
+      padding: 12px 0 12px 28px;
+      position: relative;
+      color: #333;
+      line-height: 1.7;
+    }
+    
+    .highlight-list li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #1e3a8a;
+      font-weight: 700;
+      font-size: 1.2em;
+    }
+    
+    .methods-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+    
+    .method-item {
+      background: white;
+      border: 1px solid #e0e0e0;
+      padding: 16px 20px;
+      transition: all 0.3s ease;
+      border-left: 3px solid #1e3a8a;
+    }
+    
+    .method-item:hover {
+      background: #dbeafe;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+      transform: translateY(-2px);
+    }
+    
+    .method-item strong {
+      color: #1a1a1a;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+    }
+    
+    .method-item span {
+      color: #555;
+      font-size: 0.92em;
+      line-height: 1.5;
+    }
+    
+    .projects-grid {
+      display: grid;
+      gap: 24px;
+      margin-top: 24px;
+    }
+    
+    .project-card {
+      background: white;
+      border: 2px solid #e0e0e0;
+      padding: 28px;
+      transition: all 0.3s ease;
+      position: relative;
+      text-align: center;
+    }
+    
+    .project-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: #1e3a8a;
+      transform: scaleY(0);
+      transform-origin: bottom;
+      transition: transform 0.3s ease;
+    }
+    
+    .project-card:hover {
+      border-color: #1e3a8a;
+      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.2);
+      transform: translateY(-3px);
+    }
+    
+    .project-card:hover::before {
+      transform: scaleY(1);
+      transform-origin: top;
+    }
+    
+    .project-title {
+      font-size: 1.2em;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+    }
+    
+    .project-desc {
+      color: #555;
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+    
+    .project-link {
+      display: inline-block;
+      color: #1e3a8a;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 2px solid #1e3a8a;
+      transition: all 0.3s ease;
+    }
+    
+    .project-link:hover {
+      background: #1e3a8a;
+      color: white;
+    }
+    
+    @media (max-width: 768px) {
+      header, .section {
+        padding: 30px 25px;
+      }
+      
+      h1 {
+        font-size: 2em;
+      }
+      
+      .section-title {
+        font-size: 1.4em;
+      }
+      
+      .methods-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .header-links {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Thibault Lalut</h1>
+      <p class="tagline">Diplômé de l'EHESS (Master de sociologie, mention Très Bien, juin 2025)<br>Préparation doctorat (2026)</p>
+      <div class="header-links">
+        <a href="https://orcid.org/0009-0004-6720-2974" target="_blank" rel="noopener">ORCID</a>
+        <a href="https://www.linkedin.com/in/thibault-lalut/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:thibault.lalut@ehess.fr">Email</a>
+        <a href="https://github.com/thibault-lalut" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">Mémoire de recherche</h2>
+      <div class="intro-block">
+        « <strong>Des énarques aux administrateurs d'État : recompositions institutionnelles et redéfinitions des savoirs entre l'ENA et l'INSP (1945–2025)</strong> »
+      </div>
+      
+      <p class="intro-text">
+        La suppression de l'École nationale d'administration et son remplacement par l'Institut national du service public en janvier 2022 constituent un moment de transition fécond pour l'analyse sociologique. Cette enquête mobilise archives, entretiens semi-directifs, sociographie, questionnaires diffusés aux promotions INSP et analyse lexicométrique de corpus institutionnels pour documenter ce qui, entre les deux institutions, relève du changement et ce qui perdure dans les manières de choisir, former et orienter celles et ceux à qui l'on confie les rouages de l'État.
+      </p>
+      
+      <p class="intro-text" style="font-style: italic; font-size: 0.95em; margin-top: -8px;">
+        Direction : François Denord, CESSP-CNRS
+      </p>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3 class="project-title">Portfolio de recherche</h3>
+          <p class="project-desc">
+            Synthèse interactive des principaux axes et résultats du mémoire. Analyse lexicométrique de 31 465 documents et données sociographiques sur 327 étudiants INSP.
+          </p>
+          <a href="https://thibault-lalut.github.io/portfolio-recherche-insp-2025/" target="_blank" rel="noopener" class="project-link">Voir le portfolio →</a>
+        </div>
+        
+        <div class="project-card">
+          <h3 class="project-title">Questionnaire INSP 2022-2024</h3>
+          <p class="project-desc">
+            Synthèse interactive d'un questionnaire diffusé auprès des promotions INSP 2022-2024 (N=52). Analyse des perceptions étudiantes sur la transformation ENA→INSP.
+          </p>
+          <a href="https://thibault-lalut.github.io/questionnaire-insp-2025/" target="_blank" rel="noopener" class="project-link">Voir les résultats →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Projet de thèse</h2>
+      <div class="intro-block">
+        « <strong>Gouverner l'État numérisé à l'épreuve des algorithmes : chaînes de décision, prestataires et souveraineté numérique dans la haute fonction publique</strong> »
+      </div>
+      
+      <p class="intro-text">
+        À mesure que l'action publique s'appuie sur des dispositifs algorithmiques, se cristallise une tension structurante : tandis que souveraineté numérique et imputabilité administrative sont réaffirmées, l'État dépend de compétences et d'expertises clés détenues hors de ses frontières. Cette enquête examine comment la généralisation de ces systèmes reconfigure le sommet de l'appareil bureaucratique en redistribuant l'autorité décisionnelle et les prises sur la décision entre élites administratives traditionnelles, profils techniques internalisés et acteurs externalisés. Par prosopographie, analyse de chaînes de décision et études de cas, elle documente les mécanismes par lesquels ces redistributions se stabilisent et deviennent durables dans l'administration.
+      </p>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3 class="project-title">Présentation interactive du projet doctoral</h3>
+          <p class="project-desc">
+            Présentation détaillée du projet doctoral sur la généralisation des systèmes algorithmiques au sommet de l'État, l'autorité décisionnelle et les chaînes de décision dans la haute fonction publique.
+          </p>
+          <a href="https://thibault-lalut.github.io/projet-de-these/" target="_blank" rel="noopener" class="project-link">Accéder au projet →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Research focus</h2>
+      <ul class="highlight-list">
+        <li>Gouvernance numérique, instruments algorithmiques, souveraineté et externalisation</li>
+        <li>Sociologie de l'action publique, sociologie des organisations, sociologie des élites</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Methods & tools</h2>
+      
+      <div class="intro-block">
+        <strong>Approches mixtes</strong> : prosopographie, analyse documentaire, questionnaires, entretiens semi-directifs, traitement statistique, scraping de corpus, lexicométrie, observation de terrain...
+      </div>
+      
+      <div class="methods-grid">
+        <div class="method-item">
+          <strong>Python (avancé)</strong>
+          <span>pandas, numpy, scraping (Selenium, BeautifulSoup), traitement de corpus</span>
+        </div>
+        <div class="method-item">
+          <strong>R (intermédiaire)</strong>
+          <span>dataviz (ggplot2), manipulation de données (dplyr), ACM/AFM</span>
+        </div>
+        <div class="method-item">
+          <strong>Excel (expert)</strong>
+          <span>nettoyage/recodage, contrôles, TCD, indicateurs</span>
+        </div>
+        <div class="method-item">
+          <strong>LimeSurvey / Qualtrics (expert)</strong>
+          <span>conception, logique conditionnelle, exports</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
